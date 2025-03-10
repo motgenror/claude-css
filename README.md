@@ -17,8 +17,8 @@ body {
   --text-100: 0 0% 66.67%;
   --codefg: rgb(230, 192, 123);
   --codebg: rgb(32, 35, 39);
-  --codefont: "JetBrains Mono";
-  --textfont: "Segoe UI";
+  --codefont: "JetBrains Mono", monospace;
+  --textfont: "Segoe UI", sans-serif;
   --claude-font-message: var(--textfont);
   --font-styrene-b: var(--textfont);
 }
