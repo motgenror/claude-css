@@ -16,7 +16,7 @@ body {
   --bg-000: 0 0% 5%;
   --text-100: 0 0% 66.67%;
   --codefg: rgb(230, 192, 123);
-  --codebg: rgb(32, 35, 39);
+  --codebg: rgb(20, 19, 16);
   --codefont: "JetBrains Mono", monospace;
   --textfont: "Segoe UI", sans-serif;
   --claude-font-message: var(--textfont);
@@ -64,6 +64,18 @@ code:not(pre code).text-danger-000, div.ProseMirror>p>code {
   font-family: var(--codefont);
 }
 
+.prismjs.code-block__code, code[class*=language-] {
+  background-color: rgb(8, 8, 8);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cfilter id='paper-texture'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' seed='1' stitchTiles='stitch' /%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0' /%3E%3CfeTurbulence result='noise2' type='fractalNoise' baseFrequency='0.4' numOctaves='2' seed='5' /%3E%3CfeColorMatrix in='noise2' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0' /%3E%3CfeComposite operator='arithmetic' k1='0' k2='1' k3='1' k4='0' /%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0.01 0 1 0 0 0.01 0 0 1 0 0 0 0 0 1 0' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper-texture)' fill='%23080808' /%3E%3C/svg%3E");
+  background-blend-mode: screen;
+  color: #f0f0f0;
+
+}
+
+pre code {
+  background: inherit !important;
+}
+
 .text-\[0\.9rem\] {
   font-size: 10pt;
 }
@@ -74,5 +86,4 @@ code:not(pre code).text-danger-000, div.ProseMirror>p>code {
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffcb3d !important;
-}
-```
+}```
