@@ -25,8 +25,8 @@ body {
   --font-styrene-b: var(--textfont);
 }
 
-.bg-gradient-to-b {
-  background: black;
+.bg-gradient-to-b, .bg-gradient-to-r {
+  background: unset;
 }
 
 .bg-\[linear-gradient\(to_bottom\2c _hsla\(var\(--bg-000\)\/0\.75\)_0\%\2c _hsla\(var\(--bg-000\)_\/_0\)_90\%\)\] {
